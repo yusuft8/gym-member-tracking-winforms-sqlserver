@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71E922F5-CD01-4B04-9495-6A20E7414D39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VisualProgramingProje</RootNamespace>
+    <AssemblyName>VisualProgramingProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOdeme.Designer.cs">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOlcum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOlcum.Designer.cs">
+      <DependentUpon>FormOlcum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaporlar.Designer.cs">
+      <DependentUpon>FormRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUye.Designer.cs">
+      <DependentUpon>FormUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeKayıt.Designer.cs">
+      <DependentUpon>FormUyeKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visual_ProjeDataSet.cs">
+      <DependentUpon>Visual_ProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Visual_ProjeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Visual_ProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Visual_ProjeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Visual_ProjeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Visual_ProjeDataSetolcumler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Visual_ProjeDataSetolcumler.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOdeme.resx">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOlcum.resx">
+      <DependentUpon>FormOlcum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRaporlar.resx">
+      <DependentUpon>FormRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUye.resx">
+      <DependentUpon>FormUye.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeKayıt.resx">
+      <DependentUpon>FormUyeKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Visual_ProjeDataSet.xsc">
+      <DependentUpon>Visual_ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Visual_ProjeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Visual_ProjeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Visual_ProjeDataSet.xss">
+      <DependentUpon>Visual_ProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Visual_ProjeDataSet1.xsc">
+      <DependentUpon>Visual_ProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Visual_ProjeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Visual_ProjeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Visual_ProjeDataSet1.xss">
+      <DependentUpon>Visual_ProjeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Visual_ProjeDataSetolcumler.xsc">
+      <DependentUpon>Visual_ProjeDataSetolcumler.xsd</DependentUpon>
+    </None>
+    <None Include="Visual_ProjeDataSetolcumler.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Visual_ProjeDataSetolcumler.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Visual_ProjeDataSetolcumler.xss">
+      <DependentUpon>Visual_ProjeDataSetolcumler.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymnote_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
