@@ -24,3 +24,9 @@ Kullanıcı dostu arayüzü sayesinde üyelik işlemleri kolayca yönetilebilmek
 - SQL Server
 - ADO.NET / Entity Framework (hangisini kullandıysan biri kalsın)
 
+---
+
+<img width="615" height="649" alt="image" src="https://github.com/user-attachments/assets/aa03c6f5-0a59-4a38-b7e4-77c0cb6a7d22" />
+<img width="728" height="624" alt="image" src="https://github.com/user-attachments/assets/9a3f33e0-51b6-4f2b-935a-b3c01eff6c9a" />
+
+
